@@ -12,12 +12,26 @@
             justify-content: top;
             height: 100vh;
             margin: 0;
+            line-height: 3;
         }
+        
 
     </style>
     <body>
         
+
         <p style="font-size:xx-large;"> Account Setup </p>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required>
+        <label for="first">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <label for="last">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <label for="bday">Birthday:</label>
+        <input type="text" id="bday" name="bday" required>
+        <input type="submit" value="next" onclick="window.location.href='start.html'">
+        
 
     </body>
 
