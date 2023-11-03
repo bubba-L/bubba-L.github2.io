@@ -14,23 +14,40 @@
             margin: 0;
         }
 
-        #body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: top;
-            height: 7vh;
-            margin: 0;
+        .navbar ul{
+            list-style-type: none;
+            background-color: hsl(0, 0%, 25%);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color: hsl(0, 0%, 10%);
+        }
+
+        .navbar li{
+            float: left;
         }
 
     </style>
     <body>
-        <div class="navbar">
-            <a href="home.html">UniTrade</a>
-            <a href="home.html">Friends</a>
-            <a href="home.html">Messages</a>
-            <a href="home.html">Notifications</a>
-        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">UniTrade</a></li>
+                <li><a href="home.html">Friends</a></li>
+                <li><a href="home.html">Messages</a></li>
+                <li><a href="home.html">Notifications</a></li>
+            </ul>
+        </nav>
 
         <button id="homeButton" onclick="window.location.href='home.html'">
             <img src="/images/Icon.png" width="50" height="50" alt="Image Description">
