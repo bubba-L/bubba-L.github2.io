@@ -7,7 +7,7 @@
     <style>
         .navbar ul{
             list-style-type: none;
-            background-color: hsl(0, 0%, 25%);
+            background-color: hsl(255, 60%, 65%);
             padding: 0px;
             margin: 0px;
             overflow: hidden;
@@ -15,6 +15,7 @@
 
         .navbar a{
             color: white;
+            font-family: Arial, Helvetica, sans-serif;
             text-decoration: none;
             padding: 15px;
             display: block;
@@ -22,11 +23,15 @@
         }
 
         .navbar a:hover{
-            background-color: hsl(0, 0%, 10%);
+            background-color: hsl(255, 60%, 55%);
         }
 
         .navbar li{
             float: left;
+        }
+
+        .navbar form{
+            text-align: center;
         }
     </style>
     <body>
@@ -34,10 +39,16 @@
             <ul>
                 <li><img src="/images/Icon.png" width="45" height="45" alt="Image Description"></li>
                 <li><a href="home.html">UniTrade</a></li>
+                <li><form id="form" role="search">
+                    <input type="search" id="query" name="q"
+                     placeholder="Search..."
+                     aria-label="Search through site content">
+                    <button>Search</button></form></li>
                 <li><a href="home.html">Friends</a></li>
                 <li><a href="home.html">Messages</a></li>
                 <li><a href="home.html">Notifications</a></li>
             </ul>
         </nav>
+          </form>
     </body>
 </html>
