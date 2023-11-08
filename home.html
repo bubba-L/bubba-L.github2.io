@@ -33,17 +33,19 @@
         .navbar form{
             text-align: center;
         }
+
+        #search{
+            margin-top: 13px;
+            max-width: 100%;
+        }
     </style>
     <body>
         <nav class="navbar">
             <ul>
                 <li><img src="/images/Icon.png" width="45" height="45" alt="Image Description"></li>
                 <li><a href="home.html">UniTrade</a></li>
-                <li><form id="form" role="search">
-                    <input type="search" id="query" name="q"
-                     placeholder="Search..."
-                     aria-label="Search through site content">
-                    <button>Search</button></form></li>
+                <li><input type="search" id="search" name="search" placeholder="Search UniTrade">
+                <button id="searchButton" onclick="window.location.href='home.html'">Search</button></li>
                 <li><a href="home.html">Friends</a></li>
                 <li><a href="home.html">Messages</a></li>
                 <li><a href="home.html">Notifications</a></li>
