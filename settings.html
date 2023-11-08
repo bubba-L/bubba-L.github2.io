@@ -46,6 +46,41 @@
         #searchButton{
             height: 30px;
         }
+
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100vh;
+            margin: 0;
+            line-height: 3;
+            margin: 50px;
+        }
+
+        .buttons #editprofile{
+            width: 400px;
+            height: 100px;
+            margin: 25px;
+        }
+
+        .buttons #editaccount{
+            width: 400px;
+            height: 100px;
+            margin: 25px;
+        }
+
+        .buttons #privacy{
+            width: 400px;
+            height: 100px;
+            margin: 25px;
+        }
+
+        .buttons #signout{
+            width: 400px;
+            height: 100px;
+            margin: 25px;
+        }
     </style>
     <body>
         <nav class="navbar">
@@ -60,6 +95,11 @@
                 <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
-        <button id="editProfile" onclick="window.location.href='account_setup.html'">Edit Profile</button>
+        <div class="buttons">
+            <button id="editprofile" onclick="window.location.href='account_setup.html'" style="font-size: 25px;">Edit Profile</button>
+            <button id="editaccount" onclick="window.location.href='account_setup.html'" style="font-size: 25px;">Edit Account Information</button>
+            <button id="privacy" onclick="window.location.href='account_setup.html'" style="font-size: 25px;">Privacy and Security</button>
+            <button id="signout" onclick="window.location.href='signup.html'" style="font-size: 25px;">Sign Out</button>
+        </div>
     </body>
 </html>
