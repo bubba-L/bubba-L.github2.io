@@ -51,10 +51,17 @@
             display: flex;
             flex-direction: column;
             justify-content: top;
-            margin: 0;
+            margin: 1%;
             line-height: 2;
             font-size: 150%;
             font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        #myButton {
+            display: flex;
+            border: none;
+            background: transparent;
+            cursor: pointer;
         }
     </style>
     <body>
@@ -71,7 +78,16 @@
             </ul>
         </nav>
         <p id="title"><b>Your listings</b></p>
-        <p id="title"><b>Listings within 10 miles</b></p>
+        <button id="myButton" onclick="window.location.href='signup.html'">
+            <img src="images/textbooks.jpg" href="" style="max-width: 20%; margin: 1%;"></img>
+        </button>
+        <p id="title"><b>Listings within <label for="radius"></label>
+        <select name="radius" id="radius" style="width: 8%; text-align: center;">
+            <option value="5-miles">5 miles</option>
+            <option value="10-miles">10 miles</option>
+            <option value="15-miles">15 miles</option>
+            <option value="20-miles">20 miles</option>
+        </select></b></p>
 
     </body>
 </html>
