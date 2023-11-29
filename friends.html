@@ -84,6 +84,27 @@
             height: 100px;
             margin: 25px;
         }
+        
+        .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #myButton {
+            display: flex;
+            justify-content: space-around;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
     </style>
     <body>
         <nav class="navbar">
@@ -98,6 +119,52 @@
                 <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
-        
+        <div class="row">
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='myfriend.html'">
+                    <img src="images/pfp.jpg" href="" style="max-width: 150%; margin-left: 1%;"></img>
+                </button>
+            </div>
+            <div class="column">
+                <button id="myButton" onclick="window.location.href='addfriend.html'">
+                    <img src="images/plus.png" href="" style="max-width: 50%; margin-left: -50%;"></img>
+                </button>
+            </div>
+        </div>
     </body>
 </html>
