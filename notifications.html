@@ -84,8 +84,32 @@
             height: 100px;
             margin: 25px;
         }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5px;
+        }
+        .text{
+            display: flex;
+            float: right;
+            flex-direction: column;
+            height: 100vh;
+            margin-left: 10%;
+            line-height: 4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box {
+            width: 750px;
+            height: 100px;
+            border-radius: 25px;
+            border: 3px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
     </style>
-    </body>
+    <body>
         <nav class="navbar">
             <ul>
                 <li><img src="/images/Icon.png" width="45" height="45" alt="Image Description"></li>
@@ -98,5 +122,33 @@
                 <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
+        <div class="container">
+            <div class="text">
+                <div class = "box">
+                    <label for="Notification1">New Item</label>
+                </div>
+                <div class = "box">
+                <label for="Notification2">Sold Out</label>
+                </div>
+                <div class = "box">
+                <label for="Notification3">Limited Supply</label>
+                </div>
+                <div class = "box">
+                <label for="Notification4">50% off</label>
+                </div>
+                <div class = "box">
+                <label for="Notification5">In Stock Now</label>
+                </div>
+                <div class = "box">
+                <label for="Notification6">Trade Request</label>
+                </div>
+                <div class = "box">
+                <label for="Notification7">Sold</label>
+                </div>
+                <div class = "box">
+                <label for="Notification8">Trade Denied</label>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
