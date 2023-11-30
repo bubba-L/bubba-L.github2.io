@@ -84,6 +84,16 @@
             height: 100px;
             margin: 25px;
         }
+        .body_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100vh;
+            margin: 0;
+            line-height: 3;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
     <body>
         <nav class="navbar">
@@ -98,4 +108,12 @@
                 <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
+        <div class="body_2">
+            <p style="font-size:xx-large;"><b>Search for a friend!</b></p>
+
+            <label for="username">Friends Username </label>
+            <input type="text" id="username" name="username" style="width: 250px; height: 30px;border-radius: 10px;" required>
+            <input type="submit" value="Next" onclick="window.location.href='myfriend.html'" style="margin: 25px; width: 255px; height: 40px; background: hsl(255, 75%, 75%); color: white; border-radius: 10px; font-size: medium;">
+        </div>    
+
     </body>
